@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Hello React.js v16</title>
+</head>
+
+<body>
+<div id="hello-react"></div>
+
+<script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+<script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+
+<script type="text/javascript">
+	'use strict';
+
+	const element = React.createElement;
+
+	class HelloReact extends React.Component {
+	  render() {
+	    return "Hello React v16!";
+	  }
+	}
+
+	const dom = document.querySelector('#hello-react');
+	ReactDOM.render(element(HelloReact), dom);
+</script>
+
+</body>
+</html>
